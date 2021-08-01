@@ -1368,6 +1368,17 @@ namespace Tizen.NUI.BaseComponents
         }
 
         /// <summary>
+        /// Copy text starting at startingPosition and ending at endingPosition.
+        /// </summary>
+        [EditorBrowsable(EditorBrowsableState.Never)]
+        public void CopyText(int startingPosition, int endingPosition)
+        {
+            Interop.TextField.CopyText(SwigCPtr, startingPosition, endingPosition);
+            if (NDalicPINVOKE.SWIGPendingException.Pending) throw NDalicPINVOKE.SWIGPendingException.Retrieve();
+        }
+
+
+        /// <summary>
         /// The Placeholder property.
         /// The placeholder map contains the following keys :<br />
         /// <list type="table">

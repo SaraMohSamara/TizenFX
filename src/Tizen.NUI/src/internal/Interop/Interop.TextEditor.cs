@@ -307,6 +307,9 @@ namespace Tizen.NUI
 
             [global::System.Runtime.InteropServices.DllImport(NDalicPINVOKE.Lib, EntryPoint = "CSharp_TextEditor_Property_ELLIPSIS_POSITION_get")]
             public static extern int EllipsisPositionGet();
+
+            [global::System.Runtime.InteropServices.DllImport(NDalicPINVOKE.Lib, EntryPoint = "CSharp_Dali_TextEditor_Property_CopyText")]
+            public static extern bool CopyText(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3);
         }
     }
 }

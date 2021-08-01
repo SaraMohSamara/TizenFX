@@ -1612,6 +1612,16 @@ namespace Tizen.NUI.BaseComponents
         }
 
         /// <summary>
+        /// Copy text starting at startingPosition and ending at endingPosition.
+        /// </summary>
+        [EditorBrowsable(EditorBrowsableState.Never)]
+        public void CopyText(int startingPosition, int endingPosition)
+        {
+            Interop.TextEditor.CopyText(SwigCPtr, startingPosition, endingPosition);
+            if (NDalicPINVOKE.SWIGPendingException.Pending) throw NDalicPINVOKE.SWIGPendingException.Retrieve();
+        }
+
+        /// <summary>
         /// Enable grab handle popup property.
         /// </summary>
         [EditorBrowsable(EditorBrowsableState.Never)]
