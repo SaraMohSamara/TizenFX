@@ -1152,5 +1152,69 @@ namespace Tizen.NUI.BaseComponents
 
             return ret;
         }
+
+        /// <summary>
+        /// Copy and return the selected text.
+        /// </summary>
+        [EditorBrowsable(EditorBrowsableState.Never)]
+        public static string CopyToClipboard(TextEditor textEditor)
+        {
+            string copiedText = Interop.TextEditor.CopyText(textEditor.SwigCPtr);
+            if (NDalicPINVOKE.SWIGPendingException.Pending) throw NDalicPINVOKE.SWIGPendingException.Retrieve();
+            return copiedText;
+        }
+
+        /// <summary>
+        /// Copy and return the selected text.
+        /// </summary>
+        [EditorBrowsable(EditorBrowsableState.Never)]
+        public static string CopyToClipboard(TextField textField)
+        {
+            string copiedText = Interop.TextField.CopyText(textField.SwigCPtr);
+            if (NDalicPINVOKE.SWIGPendingException.Pending) throw NDalicPINVOKE.SWIGPendingException.Retrieve();
+            return copiedText;
+        }
+
+        /// <summary>
+        /// Cut and return the selected text.
+        /// </summary>
+        [EditorBrowsable(EditorBrowsableState.Never)]
+        public static string CutToClipboard(TextEditor textEditor)
+        {
+            string cutText = Interop.TextEditor.CutText(textEditor.SwigCPtr);
+            if (NDalicPINVOKE.SWIGPendingException.Pending) throw NDalicPINVOKE.SWIGPendingException.Retrieve();
+            return cutText;
+        }
+
+        /// <summary>
+        /// Cut and return the selected text.
+        /// </summary>
+        [EditorBrowsable(EditorBrowsableState.Never)]
+        public static string CutToClipboard(TextField textField)
+        {
+            string cutText = Interop.TextField.CutText(textField.SwigCPtr);
+            if (NDalicPINVOKE.SWIGPendingException.Pending) throw NDalicPINVOKE.SWIGPendingException.Retrieve();
+            return cutText;
+        }
+
+        /// <summary>
+        /// Paste the most recently copied/cut text.
+        /// </summary>
+        [EditorBrowsable(EditorBrowsableState.Never)]
+        public static void PasteTo(TextEditor textEditor)
+        {
+            Interop.TextEditor.PasteText(textEditor.SwigCPtr);
+            if (NDalicPINVOKE.SWIGPendingException.Pending) throw NDalicPINVOKE.SWIGPendingException.Retrieve();
+        }
+
+        /// <summary>
+        /// Paste the most recently copied/cut text.
+        /// </summary>
+        [EditorBrowsable(EditorBrowsableState.Never)]
+        public static void PasteTo(TextField textField)
+        {
+            Interop.TextField.PasteText(textField.SwigCPtr);
+            if (NDalicPINVOKE.SWIGPendingException.Pending) throw NDalicPINVOKE.SWIGPendingException.Retrieve();
+        }
     }
 }
