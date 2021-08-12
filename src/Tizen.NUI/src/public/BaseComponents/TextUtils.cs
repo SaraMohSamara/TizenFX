@@ -1154,8 +1154,11 @@ namespace Tizen.NUI.BaseComponents
         }
 
         /// <summary>
-        /// Copy and return the selected text.
+        /// Copy the previously selected text into the clipboard and return the copied value.
         /// </summary>
+        /// <param name="textEditor">The textEditor control from which the text is copied.</param>
+        /// <returns>The copied text.</returns>
+        // This will be public opened after ACR done. (Before ACR, need to be hidden as Inhouse API)
         [EditorBrowsable(EditorBrowsableState.Never)]
         public static string CopyToClipboard(TextEditor textEditor)
         {
@@ -1165,8 +1168,11 @@ namespace Tizen.NUI.BaseComponents
         }
 
         /// <summary>
-        /// Copy and return the selected text.
+        /// Copy the previously selected text into the clipboard and return the copied value.
         /// </summary>
+        /// <param name="textField">The textField control from which the text is copied.</param>
+        /// <returns>The copied text.</returns>
+        // This will be public opened after ACR done. (Before ACR, need to be hidden as Inhouse API)
         [EditorBrowsable(EditorBrowsableState.Never)]
         public static string CopyToClipboard(TextField textField)
         {
@@ -1176,8 +1182,11 @@ namespace Tizen.NUI.BaseComponents
         }
 
         /// <summary>
-        /// Cut and return the selected text.
+        /// Cut the previously selected text from the text control and into the clipboard and return the cut value.
         /// </summary>
+        /// <param name="textEditor">The textEditor control from which the text is cut.</param>
+        /// <returns>The cut text.</returns>
+        // This will be public opened after ACR done. (Before ACR, need to be hidden as Inhouse API)
         [EditorBrowsable(EditorBrowsableState.Never)]
         public static string CutToClipboard(TextEditor textEditor)
         {
@@ -1187,8 +1196,11 @@ namespace Tizen.NUI.BaseComponents
         }
 
         /// <summary>
-        /// Cut and return the selected text.
+        /// Cut the previously selected text from the text control and into the clipboard and return the cut value.
         /// </summary>
+        /// <param name="textField">The textField control from which the text is cut.</param>
+        /// <returns>The cut text.</returns>
+        // This will be public opened after ACR done. (Before ACR, need to be hidden as Inhouse API)
         [EditorBrowsable(EditorBrowsableState.Never)]
         public static string CutToClipboard(TextField textField)
         {
@@ -1198,8 +1210,10 @@ namespace Tizen.NUI.BaseComponents
         }
 
         /// <summary>
-        /// Paste the most recently copied/cut text.
+        /// Paste the most recently copied/cut text from the clipboard and into the text control.
         /// </summary>
+        /// <param name="textEditor">The textEditor control into which the text is pasted.</param>
+        // This will be public opened after ACR done. (Before ACR, need to be hidden as Inhouse API)
         [EditorBrowsable(EditorBrowsableState.Never)]
         public static void PasteTo(TextEditor textEditor)
         {
@@ -1208,8 +1222,10 @@ namespace Tizen.NUI.BaseComponents
         }
 
         /// <summary>
-        /// Paste the most recently copied/cut text.
+        /// Paste the most recently copied/cut text from the clipboard and into the text control.
         /// </summary>
+        /// <param name="textField">The textField control into which the text is pasted.</param>
+        // This will be public opened after ACR done. (Before ACR, need to be hidden as Inhouse API)
         [EditorBrowsable(EditorBrowsableState.Never)]
         public static void PasteTo(TextField textField)
         {
